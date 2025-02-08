@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.sidebar img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background: #f4f4f4;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 100%;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #333;
+}
+
+.user-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.new-user {
+    font-weight: bold;
+}
+
+.profile-options {
+    display: flex;
+    gap: 10px;
+}
+
+.profile {
+    text-decoration: none;
+    color: green;
+    font-size: 14px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Call to Action */
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.red-btn {
+    background: red;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+}
+
+.tax-image {
+    /* width: 100%; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 200px; width: 400px;
+}
