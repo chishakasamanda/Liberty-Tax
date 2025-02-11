@@ -21,7 +21,7 @@
     </div>
     <div class="content">
         <header>
-            <span class="contact-info">📞 +917600300778</span>
+            <span class="contact-info"><img src="./images/colorphne.jpg" height="15px"> +917600300778</span>
             <button class="user-btn">User: Admin</button>
             <div class="profile-options">
                 <a href="admin-profile.jsp" class="profile"><i class="fas fa-user"></i> Profile</a>

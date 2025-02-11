@@ -24,7 +24,7 @@
     </div>
     <div class="content">
         <header>
-            <span class="contact-info">📞 +917600300778</span>
+            <span class="contact-info"><img src="./images/colorphne.jpg" height="15px"> +917600300778</span>
             <button class="user-btn">User: Admin</button>
             <div class="profile-options">
                 <a href="admin-profile.jsp" class="profile"><i class="fas fa-user"></i> Profile</a>
@@ -40,15 +40,15 @@
             <div class="cards-container">
                 <div class="card" style="background: radial-gradient(#5D68AE, #C8B7A4);">
                     <h3>All Users</h3>
-                    <button class="btn red-btn">Click To See</button>
+                    <a href="users.jsp" class="btn red-btn">Click To See</a>
                 </div>
                 <div class="card" style="background: radial-gradient(#D46482, #737373);">
                     <h3>All Submitted Tax</h3>
-                    <button class="btn green-btn">Click To See</button>
+                    <a href="admin-taxfile.jsp" class="btn green-btn">Click To See</a>
                 </div>
                 <div class="card" style="background: linear-gradient(#74E79180, #70213680, #4689CC80);">
                     <h3>User Form Fields</h3>
-                    <button class="btn blue-btn">Click To See</button>
+                    <a class="btn blue-btn">Click To See</a>
                 </div>
             </div>
     

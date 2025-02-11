@@ -97,23 +97,30 @@
             <form>
                 <div class="input-box">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Select Tax Type" required>
+                    <select style="background: transparent; border: none">
+                    	<option>Select Tax Type</option>
+                    	<option>New Comer</option>
+                    	<option>Small Business</option>
+                    	<option>Military</option>
+                    	<option>Student</option>
+                    	<option>Tax Filling</option>
+                    </select>
                 </div>
                 <div class="input-box">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Enter full name" required>
                 </div>
                 <div class="input-box">
                     <i class="fas fa-phone"></i>
-                    <input type="text" placeholder="Phone" required>
+                    <input type="text" placeholder="Enter Phone number" required>
                 </div>
                 <div class="input-box">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder=" Enter Email" required>
                 </div>
                 <div class="input-box">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Enter Password" required>
                     <i class="fas fa-eye-slash"></i>
                 </div>
                 <div class="input-box">

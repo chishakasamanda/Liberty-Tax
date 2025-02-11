@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="adminDashboard.css">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="adminDashboard.css"> -->
+    <link rel="stylesheet" href="userDashboard.css">
     <link rel="stylesheet" href="editprofile.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <script src="sidebar.js"></script>
 </head>
 <body>
     <div id="sidebar-container">
         <div class="sidebar">
             <img src="./images/tax_logo.jpg" alt="Liberty Tax">
-            <p class="admin-info">Welcome <b>Varney Butler</b><br>System Administrator</p>
-            <a href="adminDashboard.jsp"><img src="./images/dashb.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Dashboard</a>
+            <p class="admin-info">Welcome <b>Robert</b></p>
+            <a href="userDashboard.jsp"><img src="./images/dashb.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Dashboard</a>
             <a href="live-site.jsp"><img src="./images/live sign.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Live Site</a>
-            <a href="admin-taxfile.jsp"><img src="./images/user1.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Admin TaxFile</a>
-            <a href="user-form.jsp"><img src="./images/poweron.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> User Form Fields</a>
-            <a href="users.jsp"><img src="./images/user1.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Users</a>
-            <a href="roles.jsp"><img src="./images/roles.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Roles & Permission</a>
-        </div>       
+            <a href="user-taxfile.jsp"><img src="./images/user1.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> My TaxFiles</a>
+            <a href="logout.jsp"><img src="./images/logoutadmin2.jpg" alt="Liberty Tax" style="height: 30px; width: 30px;margin: 5px;"> Logout</a>
+        </div>
+        
     </div>
     <div class="content">
-        <div class="header">
-            <h2>User Profile</h2>
-        </div>
+        <header>
+            <span class="contact-info"><img src="./images/colorphne.jpg" height="15px"> +917600300778</span>
+            <button class="user-btn">User: <span class="new-user">New Comer</span></button>
+            <div class="profile-options">
+                <a href="#" class="profile">Edit Profile</a>
+            </div>
+        </header>
+    
+        <!-- Main Content -->
         <main>
             <form id="edit-profile" class="display-flex">
             	<div class="left-section">
@@ -86,6 +94,13 @@
             </form>
         </main>
     </div>
-    <!-- <script src="sidebar.js"></script> -->
 </body>
+<!-- <script>
+    fetch("sidebar.jsp")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar-container").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading sidebar:", error));
+</script> -->
 </html>

@@ -11,32 +11,57 @@
 <body>
 
     <header class="top-nav">
-        <div class="contact-info">
-          <a href="mailto:info@libertytax.com"><img src="./images/email logo btn.webp" height="15px">info@libertytax.com</a>
-          <a href="tel:+917600300778"><img src="./images/Call-Now-Button.png" height="15px">+91 76003 00778</a>
-        </div>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </header>
-      <nav class="main-nav">
-        <div class="logo">
-          <img src="./images/tax_logo.jpg" height="70px">
-        </div>
-        <ul class="menu">
-          <li><a href="index.jsp">Home</a></li>
+    <div class="contact-info">
+      <img src="./images/email logo btn.webp" height="15px;"> info@libertytax.com
+       <img src="./images/Call-Now-Button.png" height="15px;">+91 76003 00778
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </header>
+  <nav class="main-nav" style="background-color: #FFFFFF">
+    <div class="logo">
+      <img src="./images/tax_logo.jpg" height="70px">
+    </div>
+    <ul class="menu">
+      <li><a href="index.jsp">Home</a></li>
           <li><a href="about.jsp">About</a></li>
-          <li><a href="#">Tax Beneficiary</a></li>
+          <li onClick="toggleTaxBeneficiary()">
+          	<a href="#">Tax Beneficiary</a>
+          	<div id="tax-beneficiary">
+          		<div class="elements">
+          			<img src="./images/civilian.png" >
+          			<p>New Comer</p>
+          		</div>
+          		<div class="elements">
+          			<img src="./images/small business.png">
+          			<p>Small Business</p>
+          		</div>
+          		<div class="elements">
+          			<img src="./images/military.png">
+          			<p>Military</p>
+          		</div>
+          		<div class="elements">
+          			<img src="./images/student.png">
+          			<p>Student</p>
+          		</div>
+          		<div class="elements">
+          			<img src="./images/tax.png">
+          			<p>Tax Filling</p>
+          		</div>
+          	</div>
+          </li>
           <li><a href="#">More</a></li>
           <li><a href="contact.jsp">Contact</a></li>
-          <li><a href="login.jsp">Login/Register</a></li>
-        </ul>
-      </nav>
+          <li onmouseover="showLogin()" onmouseout="hideLogin()"><a href="login.jsp">Login/Register</a><a id="login" href="login.jsp">Login</a></li>
+    </ul>
+  </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background: url('./images/bg-2.jpeg') no-repeat center; background-size: cover; height: 100px; margin: 20px 0px; padding: 50px;">
+    <section class="hero-section" style="background: url('./images/bg-2.jpeg') no-repeat center; background-size: cover; height: 100px; padding: 50px;">
         <h1>About</h1>
     </section>
 
@@ -147,4 +172,29 @@
     </footer>
 
 </body>
+<script>
+let loginElement = document.getElementById("login");
+let taxBeneficiary = document.getElementById("tax-beneficiary");
+let isTaxBeneficiaryOpen = false;
+function showLogin() {
+	loginElement.style.display = "block";
+}
+
+function hideLogin() {
+	setTimeout(() => {
+		loginElement.style.display = "none";
+	}, 2000)
+}
+
+function toggleTaxBeneficiary() {
+	isTaxBeneficiaryOpen = !isTaxBeneficiaryOpen;
+	if(isTaxBeneficiaryOpen) {
+		taxBeneficiary.style.display = "grid"; 
+	}
+	else {
+		taxBeneficiary.style.display = "none"; 
+	}
+}
+	
+</script>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Tax File</title>
-    <link rel="stylesheet" href="adminDashboard.css">
+    <link rel="stylesheet" href="userDashboard.css">
 </head>
 <body>
     <div id="sidebar-container">
@@ -19,11 +19,10 @@
     </div>
     <div class="content">
         <header>
-            <span class="contact-info">📞 +917600300778</span>
+            <span class="contact-info"><img src="./images/colorphne.jpg" height="15px"> +917600300778</span>
             <button class="user-btn">User: New Comer</button>
             <div class="profile-options">
-                <a href="#" class="profile"><i class="fas fa-user"></i> Profile</a>
-                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="userprofile.jsp" class="profile"><i class="fas fa-user"></i> Edit Profile</a>
             </div>
         </header>
         <div class="header">

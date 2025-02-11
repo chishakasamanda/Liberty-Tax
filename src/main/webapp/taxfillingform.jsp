@@ -26,26 +26,31 @@
             <span class="contact-info"><img src="./images/colorphne.jpg" height="15px"> +917600300778</span>
             <button class="user-btn">User: <span class="new-user">New Comer</span></button>
             <div class="profile-options">
-                <a href="userprofile.jsp" class="profile">Edit Profile</a>
+                <a href="#" class="profile">Edit Profile</a>
             </div>
         </header>
     
         <!-- Main Content -->
         <main>
-            <h2>Greetings!</h2>
-    
-            <!-- Call to Action -->
-            <div class="cta">
-                <span>File Your Tax:</span>
-                <a href="taxfillingform.jsp" class="btn red-btn">Let's Get Started</a>
-            </div>
-    
-            <!-- Image Grid Section -->
-            <div class="image-grid">
-                <img src="./images/taxes img.jpg" alt="Taxes" class="tax-image">
-                <img src="./images/carousal img1.jpg" alt="Tax Calculation" class="tax-image">
-                <img src="./images/carousal img2.jpg" alt="Corporate Tax" class="tax-image">
-            </div>
+            <form id="tax-filling-form">
+            	<label>Username</label>
+            	<input type="text" placeholder="Enter Username Here">
+            	<label>Email</label>
+            	<input type="email" placeholder="Enter Email Here">
+            	<label>Tax File ID</label>
+            	<input type="text" placeholder="Enter Tax File ID Here">
+            	<label>Amount</label>
+            	<input type="number" placeholder="Enter Amount Here">
+            	<label>Payment Mode</label>
+            	<div style="display: flex; align-items: center; justify-content: space-between;">
+            		<p style="margin-left: 10px;">Scan UPI Code</p>
+            		<img src="./images/upi_qr.jpg">
+            	</div>
+            	<label>Payment Date</label>
+            	<input type="text">
+            	<br>
+            	<button type="submit">Submit</button>
+            </form>
         </main>
     </div>
 </body>
